@@ -5,6 +5,28 @@
 	font-family: 'Roboto', sans-serif;
 }
 
+ul {
+	display: flex;
+	align-items: center;
+}
+
+li {
+	list-style: none;
+	padding: 0 15px;
+	color: rgb(139, 149, 158);
+	position: relative;
+}
+
+li:hover {
+	color: #000;
+}
+
+.revolut-logo {
+	width: 6.5rem;
+}
+
+
+
 #navbar {
 	width: 100vw;
 	max-width: 1200px;
@@ -19,37 +41,10 @@
 	padding: 50px 0;
 }
 
+
+
 #navbar__left {
 	margin-left: 35px
-}
-
-#navbar__right {
-	margin-right: 35px
-}
-
-#navbar__hamburger {
-	display: none;
-	margin: 0 35px;
-}
-
-#navbar__hamburger ul {
-	display: flex;
-	justify-content: space-between;
-}
-
-#navbar ul {
-	display: flex;
-	align-items: center;
-}
-
-#navbar li {
-	list-style: none;
-	padding: 0 15px;
-	color: rgb(139, 149, 158);
-}
-
-#navbar li:hover {
-	color: #000;
 }
 
 #navbar__left li {
@@ -62,8 +57,9 @@
 }
 
 
-.revolut-logo {
-	width: 6.5rem;
+
+#navbar__right {
+	margin-right: 35px
 }
 
 /*bottone Get the App*/
@@ -79,6 +75,48 @@
 	padding: 0.625em 1.5em;
 }
 
+
+
+#navbar__hamburger {
+	display: none;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 50px;
+}
+
+
+
+.navbar__dropdown-menu {
+	display: block;
+    padding-top: 15px;
+    position: absolute;
+    transform: translate(-32px);
+}
+
+.navbar__dropdown-menu li {
+	padding: 16px 32px;
+	background-color: #FFF;
+	width: 100%;
+}
+
+.small-text::after {
+	content: 'new';
+	color: #EF008C;
+	font-size: 0.8rem;
+	font-weight: bold;
+	position: absolute;
+	margin-left: 3px;
+	top: 10px;
+}
+
+.small-text__beta::after {
+	content: 'beta';
+}
+
+
+
+
 @media (max-width: 1050px)
 {
 	#navbar__left {
@@ -91,6 +129,6 @@
 
 	#navbar__hamburger {
 		display: flex;
-		justify-content: space-between;
+
 	}
 }
