@@ -88,10 +88,14 @@ li:hover {
 
 
 .navbar__dropdown-menu {
-	display: block;
+	display: none;
     padding-top: 15px;
     position: absolute;
     transform: translate(-32px);
+}
+
+.navbar__dropdown-menu__show {
+	display: block;
 }
 
 .navbar__dropdown-menu li {
